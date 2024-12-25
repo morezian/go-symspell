@@ -582,7 +582,7 @@ func (s *SymSpell) ParseWords(text string) []string {
 	// \w Alphanumeric characters (including non-latin characters, umlaut characters and digits) plus "_"
 	// \d Digits
 	// Compatible with non-latin characters, does not split words at apostrophes
-	re := regexp.MustCompile(`['’\w-[_]]+`)
+	re := regexp.MustCompile(`[\S]+`)
 
 	// for benchmarking only: with CreateDictionary("big.txt", "") and the text corpus from http://norvig.com/big.txt
 	// the Regex below provides the exact same number of dictionary items as Norvigs regex "[a-z]+" (which splits words
