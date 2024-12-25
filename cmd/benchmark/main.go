@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	symspell "github.com/zchrykng/go-symspell"
-	"github.com/zchrykng/go-symspell/verbosity"
+	symspell "github.com/morezian/go-symspell"
+	"github.com/morezian/go-symspell/verbosity"
 )
 
 func main() {
